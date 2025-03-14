@@ -47,9 +47,12 @@
     "stylelint": "^16.15.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-order": "^6.0.4",
-    "stylelint-scss": "^6.11.1"
+    "stylelint-scss": "^6.11.1",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2"
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "jquery": "^3.7.1",
+    "lightbox2": "^2.11.5"
   }
 }

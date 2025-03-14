@@ -1,3 +1,6 @@
+@use "../variables" as variables;
+@import "npm:lightbox2/dist/css/lightbox.css";
+
 * {
   box-sizing: border-box;
 }
@@ -5,53 +8,103 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   margin: 0;
   padding: 2rem;
   font-size: 16px;
-  line-height: 24px;
-  color: $uoc-corporate;
-  background-color: $uoc-bg;
-  font-family: $font-family-sans-serif;
+  line-height: 20px;
+  color: variables.$text-c;
+  background-color: variables.$primary-c;
+  font-family: variables.$font-family-sans-serif;
 }
 
-.uoc-container {
-  max-width: 800px;
+.layout {
+  max-width: 1000px;
   margin: auto;
   padding: 2rem;
   border-radius: 2rem;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  @media (max-width: 900px) {
+    padding: 0;
+  }
 }
 
-.uoc-logo {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.header__logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 200px;
+  max-width: 255px;
   height: auto;
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+  @media (min-width: 900px) {
+    max-width: 500px;
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+.uoc-container p {
+  font-size: 12px;
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+  @media (min-width: variables.$mqMinWidth) {
+    font-size: 16px;
   }
 }
+.gallery {
+  padding: 2rem;
+
+  &__grid {
+    display: grid;
+
+    @include responsive-grid(
+      $columns-default, 
+      $columns-tablet, 
+      $columns-mobile, 
+      $columns-mobile-single
+    );
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    text-align: left;
+  }
+
+  &__picture {
+    display: block;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: $text-c;
+  }
+}
+
 
 .uoc-footer {
   margin-top: 1.5rem;
+  margin-bottom: 0;
   font-size: 0.75rem;
   text-align: center;
 }

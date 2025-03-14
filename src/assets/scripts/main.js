@@ -14,3 +14,7 @@
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 } )();
+
+// Lightbox2 module to show images
+
+import 'lightbox2/dist/js/lightbox-plus-jquery.js';

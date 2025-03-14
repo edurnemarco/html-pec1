@@ -4,26 +4,204 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>un besito aquí</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!
-        <i class="fas fa-university"></i>
-      </h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <div class="layout">
+      <header class="header">
+        <h1 class="header__title visually-hidden">un besito aquí</h1>
+        <img src="./assets/images/logo.svg" alt="un besito aquí logotype" class="header__logo" />
+      </header>
+  
+      <main class="main-content">
+        <section class="intro">
+          <p class="intro__text">
+            cada imagen desvela un poema. <br>
+            cada poema está compuesto por títulos de libros seleccionados por maría y edurne.
+          </p>
+        </section>
+  
+        <section class="gallery">
+          <div class="gallery__grid">
+            <!-- ITEM 1 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p1-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintiocho de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p1.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p1.png?width=350" alt="poema 1" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">1</figcaption>
+            </figure>
+            <!-- ITEM 2 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p2-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del dos de marzo">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p2.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p2.png?width=350" alt="poema 2" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">2</figcaption>
+            </figure>
+            <!-- ITEM 3 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p3-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del dos de marzo">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p3.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p3.png?width=350" alt="poema 3" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">3</figcaption>
+            </figure>
+            <!-- ITEM 4 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p4-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintiocho de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p4.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p4.png?width=350" alt="poema 4" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">4</figcaption>
+            </figure>
+            <!-- ITEM 5 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p5-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintisiete de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p5.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p5.png?width=350" alt="poema 5" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">5</figcaption>
+            </figure>
+            <!-- ITEM 6 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p6-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintiseis de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p6.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p6.png?width=350" alt="poema 6" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">6</figcaption>
+            </figure>
+            <!-- ITEM 7 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p7-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veinticinco de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p7.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p7.png?width=350" alt="poema 7" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">7</figcaption>
+            </figure>
+            <!-- ITEM 8 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p8-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintiuno de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p8.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p8.png?width=350" alt="poema 8" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">8</figcaption>
+            </figure>
+            <!-- ITEM 9 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p9-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del veintiuno de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p9.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p9.png?width=350" alt="poema 1" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">9</figcaption>
+            </figure>
+            <!-- ITEM 10 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p10-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diecinueve de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p10.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p10.png?width=350" alt="poema 2" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">10</figcaption>
+            </figure>
+            <!-- ITEM 11 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p11-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diociocho de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p11.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p11.png?width=350" alt="poema 3" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">11</figcaption>
+            </figure>
+            <!-- ITEM 12 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p12-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diociocho de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p12.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p12.png?width=350" alt="poema 4" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">12</figcaption>
+            </figure>
+            <!-- ITEM 13 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p13-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diociocho de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p13.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p13.png?width=350" alt="poema 5" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">13</figcaption>
+            </figure>
+            <!-- ITEM 14 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p14-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diocisiete de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p14.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p14-1.png" alt="poema 14" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">14</figcaption>
+            </figure>
+            <!-- ITEM 15 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p15-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del diocisiete de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p15.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p15.png?width=350" alt="poema 15" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">15</figcaption>
+            </figure>
+            <!-- ITEM 16 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p16-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del quince de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p16.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p16.png?width=350" alt="poema 16" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">16</figcaption>
+            </figure>
+            <!-- ITEM 17 -->
+            <figure class="gallery__item">
+              <a href="./assets/images/p17-1.png" class="gallery__link" data-lightbox="poem" data-title="poema del once de febrero">
+                <picture class="gallery__picture">
+                  <source srcset="./assets/images/p17.png?as=webp&width=350" type="image/webp" />
+                  <img src="./assets/images/p17.png?width=350" alt="poema 17" class="gallery__image" loading="lazy" />
+                </picture>
+              </a>
+              <figcaption class="gallery__caption">17</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+  
+      <include src="./views/footer.html"></include>
+      <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
+  
 </html>
